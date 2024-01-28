@@ -134,7 +134,9 @@ img {
 }
 
 .btn-order:focus,
-.btn-order:hover {
+.btn-order:hover,
+.sub-btn:hover,
+.sub-btn:focus {
   background-color: #404bbf;
 }
 
@@ -490,4 +492,68 @@ img {
 
 .footer-icon {
   fill: #f4f4fd;
+}
+
+.footer-socials {
+  margin-right: 80px;
+}
+
+/* =====HW4====== */
+
+/* =====HW5====== */
+
+.sub-container {
+  display: flex;
+  gap: 24px;
+}
+
+.label-email {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.input-email {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 264px;
+  height: 40px;
+  background-color: #2e2f42;
+  padding: 8px 16px;
+}
+
+.input-email::placeholder {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.sub-btn {
+  display: flex;
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 4px;
+  border: #4d5ae5;
+  background: #4d5ae5;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
