@@ -478,63 +478,63 @@
     <!-- Modal window -->
     <div class="modal-backdrop">
       <div class="modal-window">
+        <button class="close-button" type="button">
+          <svg class="close-button-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <div class="close-button-container">
-            <div class="close-button">
-              <svg class="close-button-icon" width="8" height="8">
-                <use href="./images/icons.svg#icon-close"></use>
-              </svg>
-            </div>
-          </div>
-          <p class="modal-text">
-            Leave your contacts and we will call you back
-          </p>
-          <div class="modal-input-container">
-            <label class="label-name" for="name">Name</label>
+          <div class="label-name-container">
+            <label class="label-name" for="user-name">Name</label>
             <div class="name-container">
               <input
                 class="input-name"
                 name="user-name"
                 type="text"
-                id="name"
+                id="user-name"
               />
-              <svg class="name-icon" width="18" height="18">
+              <svg class="name-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </div>
+          </div>
+          <div class="label-phone-container">
             <label class="label-phone" for="phone">Phone</label>
             <div class="phone-container">
               <input
                 class="input-phone"
                 name="user-phone"
-                type="tel"
+                type="text"
                 id="phone"
               />
-              <svg class="phone-icon" width="18" height="18">
+              <svg class="phone-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
+          </div>
+          <div class="label-email-container">
             <label class="label-email" for="email">Email</label>
             <div class="email-container">
               <input
                 class="input-email"
                 name="user-email"
-                type="email"
+                type="text"
                 id="email"
               />
-              <svg class="email-icon" width="18" height="18">
+              <svg class="email-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
-            <label class="label-comment">
-              Comment
-              <textarea
-                class="textarea-comment"
-                name="user-comment"
-                placeholder="Text input"
-              ></textarea>
-            </label>
           </div>
+          <label class="label-comment">
+            Comment
+            <textarea
+              class="textarea-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </label>
           <div>
             <input type="checkbox" />
             <p>I accept the terms and conditions of the</p>
