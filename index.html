@@ -59,7 +59,7 @@
 
       <section class="benefits">
         <div class="benefits-container container">
-          <h2 class="benefits-title">Benefits</h2>
+          <h2 class="benefits-title visually-hidden">Benefits</h2>
 
           <ul class="benefits-list">
             <li class="benefits-item">
@@ -475,7 +475,9 @@
         </div>
       </div>
     </footer>
+
     <!-- Modal window -->
+
     <div class="modal-backdrop">
       <div class="modal-window">
         <button class="close-button" type="button">
@@ -499,6 +501,7 @@
               </svg>
             </div>
           </div>
+
           <div class="label-phone-container">
             <label class="label-phone" for="phone">Phone</label>
             <div class="phone-container">
@@ -513,6 +516,7 @@
               </svg>
             </div>
           </div>
+
           <div class="label-email-container">
             <label class="label-email" for="email">Email</label>
             <div class="email-container">
@@ -527,20 +531,37 @@
               </svg>
             </div>
           </div>
-          <label class="label-comment">
-            Comment
-            <textarea
-              class="textarea-comment"
-              name="user-comment"
-              placeholder="Text input"
-            ></textarea>
-          </label>
-          <div>
-            <input type="checkbox" />
-            <p>I accept the terms and conditions of the</p>
-            <a>Privacy Policy</a>
-            <button>Send</button>
+
+          <div class="label-comment-container">
+            <label class="label-comment" for="comment">Comment</label>
+            <div class="email-container">
+              <textarea
+                class="input-comment"
+                name="user-comment"
+                type="text"
+                id="comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
           </div>
+
+          <div class="policy-container">
+            <input
+              class="policy-check visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              value="true"
+              name="user-privacy"
+            />
+            <label class="label-policy" for="user-privacy"
+              >I accept the terms and conditions of the
+              <span class="checkbox-icon-select">
+                <svg class="checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              </span>
+          </div>
+          <button>Send</button>
         </form>
       </div>
     </div>

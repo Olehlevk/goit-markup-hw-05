@@ -34,7 +34,7 @@ input {
   font-family: inherit;
 }
 
-.benefits-title {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -582,7 +582,7 @@ input {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  padding: 72px 24px;
+  padding: 72px 24px 24px 24px;
   width: 408px;
   min-height: 584px;
   border-radius: 4px;
@@ -610,6 +610,10 @@ input {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.close-button-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .close-button:hover,
 .close-button:focus {
   background-color: #404bbf;
@@ -625,6 +629,18 @@ input {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+}
+
+.label-name,
+.label-phone,
+.label-email,
+.label-comment {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .label-name-container,
@@ -659,7 +675,8 @@ input {
 
 .input-name:focus,
 .input-phone:focus,
-.input-email:focus {
+.input-email:focus,
+.input-comment:focus {
   border-color: #4d5ae5;
 }
 
@@ -673,36 +690,55 @@ input {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-name:focus .name-icon {
+.name-container:focus-within,
+.phone-container:focus-within,
+.email-container:focus-within {
   fill: #4d5ae5;
 }
 
-.input-phone:focus .phone-icon {
-  fill: #4d5ae5;
+.label-comment-container {
+  margin-bottom: 16px;
 }
 
-.input-email:focus .email-icon {
-  fill: #4d5ae5;
-}
-
-.textarea-comment {
-  resize: none;
-  width: 360px;
-  height: 138px;
-  padding: 8px 16px;
+.input-comment {
+  width: 100%;
+  height: 120px;
+  font-style: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  box-shadow: none;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 2;
-  letter-spacing: 0.04em;
+  background-color: transparent;
+  outline: transparent;
+  resize: none;
+  padding: 8px 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea-comment::placeholder {
-  color: rgba(46, 47, 66, 0.4);
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1, 16;
+.policy-container {
+  margin-bottom: 24px;
+}
+
+.label-policy {
+  font-style: 12px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.checkbox-icon-container {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.checkbox-icon {
 }
