@@ -633,7 +633,7 @@ input {
   text-align: center;
 }
 
-.label-name {
+.label-user-information {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -642,52 +642,15 @@ input {
   margin-bottom: 4px;
 }
 
-.label-phone {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  display: block;
-  margin-bottom: 4px;
-}
-
-.label-email {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  display: block;
-  margin-bottom: 4px;
-}
-
-.label-comment {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  display: block;
-  margin-bottom: 4px;
-}
-
-.label-name-container {
+.label-container {
   margin-bottom: 8px;
 }
 
-.label-phone-container {
-  margin-bottom: 8px;
-}
-
-.label-email-container {
-  margin-bottom: 8px;
-}
-
-.name-container,
-.phone-container,
-.email-container {
+.input-container {
   position: relative;
 }
 
-.input-name {
+.input-data {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -703,46 +666,12 @@ input {
   letter-spacing: 0.04em;
 }
 
-.input-phone {
-  width: 100%;
-  height: 40px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  background-color: transparent;
-  padding-left: 38px;
-  outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: none;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 2;
-  letter-spacing: 0.04em;
-}
-
-.input-email {
-  width: 100%;
-  height: 40px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  background-color: transparent;
-  padding-left: 38px;
-  outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: none;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 2;
-  letter-spacing: 0.04em;
-}
-
-.input-name:focus,
-.input-phone:focus,
-.input-email:focus,
-.input-comment:focus {
+.input-data:focus,
+.textarea-comment:focus {
   border-color: #4d5ae5;
 }
 
-.name-icon {
+.input-icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -750,25 +679,7 @@ input {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.phone-icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 16px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.email-icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 16px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.name-container:focus-within,
-.phone-container:focus-within,
-.email-container:focus-within {
+.input-container:focus-within {
   fill: #4d5ae5;
 }
 
@@ -779,7 +690,7 @@ input {
 .textarea-comment {
   width: 100%;
   height: 120px;
-  font-style: 12px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
@@ -820,6 +731,7 @@ input {
 .policy-check:checked + label > .checkbox-icon-select {
   background-color: #404bbf;
   fill: #f4f4fd;
+  border: none;
 }
 
 .policy-link {
@@ -840,7 +752,7 @@ input {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.04m;
+  letter-spacing: 0.04em;
   border-radius: 4px;
   background: #4d5ae5;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
