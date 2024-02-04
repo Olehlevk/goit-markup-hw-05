@@ -1,21 +1,18 @@
-// modal.js
+(() => {
+  const refs = {
+    // Додати атрибут data-modal-open на кнопку відкриття
+    openModalBtn: document.querySelector("[data-modal-open]"),
+    // Додати атрибут data-modal-close на кнопку закриття
+    closeModalBtn: document.querySelector("[data-modal-close]"),
+    // Додати атрибут data-modal на бекдроп модалки
+    modal: document.querySelector("[data-modal]"),
+  };
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Get the modal elements
-  var modalBackdrop = document.querySelector(".modal-backdrop");
-  var closeButton = document.querySelector(".close-button");
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
 
-  // Show modal function
-  function showModal() {
-    modalBackdrop.style.display = "block";
+  function toggleModal() {
+    // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
+    refs.modal.classList.toggle("is-open");
   }
-
-  // Hide modal function
-  function hideModal() {
-    modalBackdrop.style.display = "none";
-  }
-
-  // Attach event listeners to open and close the modal
-  document.querySelector(".btn-order").addEventListener("click", showModal);
-  closeButton.addEventListener("click", hideModal);
-});
+})();
